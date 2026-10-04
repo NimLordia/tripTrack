@@ -1,0 +1,10 @@
+.gradle/
+.kotlin/
+.idea/
+.tooling/
+**/build/
+local.properties
+*.iml
+*.jks
+*.keystore
+app/google-services.json
