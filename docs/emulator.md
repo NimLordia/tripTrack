@@ -11,7 +11,7 @@ The launcher creates or reuses `TripTrack_API_36` on port 5556, with 3 GB RAM an
 
 Software graphics is the default because automatic graphics exited on this PC. CPU acceleration remains enabled. To try GPU rendering later, close the emulator and use `-Graphics auto`.
 
-Check the current scaffold:
+Checks completed on the original scaffold:
 
 - **Rides:** inspect the empty history.
 - **Settings:** change each timing independently; valid values are 1–1440 minutes.
@@ -19,6 +19,6 @@ Check the current scaffold:
 
 Verified on API 36: launch, both screens and preference persistence after force-stop/relaunch. Defaults were restored afterward. First boot briefly showed a System UI timeout, then recovered.
 
-Ride recording, GPS/sensor collection, Waze capture/OCR, stop detection, route analysis and cloud sync are not implemented.
+The recorder prototype now includes phone collectors, full-screen Waze OCR and saved-reading inspection; follow the [recorder test guide](recorder-test.md). The scaffold checks above do not verify the new recording paths. Stop detection, route analysis and cloud sync remain pending.
 
-For future tests, **More → Location** supports [route playback and GPX/KML import](https://developer.android.com/studio/run/emulator-extended-controls). TripTrack cannot record simulated locations yet. Real-road GPS quality and Waze/device behavior still require phone testing.
+**More → Location** supports [route playback and GPX/KML import](https://developer.android.com/studio/run/emulator-extended-controls). Real-road GPS quality and Waze/device behavior still require phone testing.

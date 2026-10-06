@@ -6,6 +6,8 @@ Preserve original values, source identity, measurement time, capture/receipt tim
 
 Preserve collected data through app switches, permission loss, capture cancellation and process interruption. Represent missing/stale readings as unavailable, never zero speed or repeated stale values. Test actual recovery behavior on the phone.
 
-Screen lock means the ride enters a stopped product state in V1; it is not a measured zero-speed sample.
+Keep collecting phone location and motion data while the screen is locked. Screen-capture interruptions affect only the Waze source and create gaps; they do not pause or finish the ride. Resume Waze capture with fresh consent when required. Lock is not a measured zero-speed sample.
 
-Open: pause versus finish on lock, unlock/resume behavior, time accounting during lock, non-screen collectors during lock, source priorities and effective sampling rates. Phone model, Android version, sensor inventory and mounting are unknown. Local recordings must not depend on a cloud round trip.
+Target test device: Samsung Galaxy S25+ running Android 16. Sensor inventory and mounting remain unverified.
+
+Open: source priorities and effective sampling rates. Local recordings must not depend on a cloud round trip.

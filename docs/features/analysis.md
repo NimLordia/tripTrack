@@ -15,6 +15,6 @@ Working metric definitions; labels and uncertain-interval treatment remain open:
 | Adjusted average | Ride distance / adjusted time |
 | Recorded top speed | Highest credible recorded speed after filtering |
 
-Use physics and surrounding readings to flag spikes, position jumps and implausible changes. Preserve original evidence alongside filtered values. Validate peaks across available sources without silently averaging them. Source agreement can share underlying errors; special handling is explicitly deferred until observed.
+Use physics and surrounding readings to flag spikes, position jumps and implausible changes. Preserve original readings alongside filtered values; Waze frame handling follows [capture](capture.md). Validate peaks across available sources without silently averaging them. Source agreement can share underlying errors; special handling is explicitly deferred until observed.
 
 Open: source priority, fusion, quality thresholds, charts, gaps in statistics and derived telemetry. [Stops](stops.md) owns exclusions; [recording](recording.md) owns timestamp alignment. Larger-dataset improvements are [later work](../later/index.md).

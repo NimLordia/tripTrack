@@ -2,18 +2,22 @@
 
 An Android motorcycle ride recorder in development, designed for reviewing a ride during a long stop or at the end of a trip, with minimal interaction while riding.
 
-**Current status: scaffold. This build does not record rides yet.** See the [product scope](docs/product.md) for the intended V1.
+**Current status: recorder prototype; target-phone validation is pending.** See the [product scope](docs/product.md) for the intended V1 and the [recorder test guide](docs/recorder-test.md) for the first device run.
 
 ## Current state
 
-Available in the scaffold:
+Implemented in the prototype:
 
-- Portrait Compose app shell with Rides and Settings screens and an empty ride history.
+- Start/Stop controls, saved ride history and a reading inspector.
+- Foreground phone location, accelerometer and gyroscope collection, independent of screen capture.
+- Full-screen Waze frame processing with bundled English text recognition; extracted text, text positions and candidate fields are saved, then the temporary frame is deleted.
+- Candidate speed, maneuver distance and arrival/duration/distance panel parsing based on the owner's portrait Waze example.
+- Capture gaps and fresh-consent resume within the same ride; phone collection continues during screen lock.
 - Locally saved, independent short-stop, inactivity-reminder and snooze preferences.
-- Room storage models for rides, telemetry, recording gaps and stop edits.
+- Room storage for readings, capture results and gaps, with a migration preserving the original database.
 - Optional Firebase configuration detection.
 
-Upcoming implementation areas are [phone recording](docs/features/recording.md), [Waze capture and OCR](docs/features/capture.md), [stop detection](docs/features/stops.md), [route analysis](docs/features/analysis.md) and [cloud synchronization](docs/features/storage.md). These linked specifications describe requirements, not completed features.
+Actual OCR output, layout variations, source clocks, GPS quality, extraction cadence and locked-phone behavior still require device validation. Hebrew street names and visual icons shown in the [example](docs/features/waze-layout.md) require additional extraction support. Readings remain unvalidated; a credible top-speed classifier is pending. [Stop detection](docs/features/stops.md), [route analysis](docs/features/analysis.md), navigation API integration and [cloud synchronization](docs/features/storage.md) remain upcoming. Timing preferences are saved, but filtering and reminder behavior are pending.
 
 ## Build and run
 

@@ -14,7 +14,7 @@ Three independent settings:
 
 Changing one must not silently change the others. Missing/stale data does not prove stationary time.
 
-Proposed editing behavior: retain raw recordings; manual choices override automatic filtering; preserve detected boundaries separately from corrections; recalculate statistics.
+Proposed editing behavior: retain original collected readings; manual choices override automatic filtering; preserve detected boundaries separately from corrections; recalculate statistics.
 
 Proposed reminder actions: Finish ride, Keep recording, Remind me later. Behavior when ignored or movement resumes remains open.
 

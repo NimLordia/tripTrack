@@ -12,7 +12,7 @@ Open the project in Android Studio. Install the SDK packages after reviewing Goo
 
 The helper uses local tools when present without changing system settings. Output: `app/build/outputs/apk/debug/app-debug.apk`.
 
-To run the current scaffold on this PC, follow the [emulator guide](emulator.md).
+The [emulator guide](emulator.md) records the original scaffold checks. Follow the [recorder test guide](recorder-test.md) for target-phone validation of the current prototype.
 
 Firebase is optional for local startup. To configure it, register Android package `com.triptrack.app` and place your project configuration in ignored `app/google-services.json`. This enables configuration detection; authentication, synchronization and access rules still need implementation. No cloud resources are created by this scaffold.
 
